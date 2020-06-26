@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#f4b400">
+    <meta name="msapplication-navbutton-color" content="#f4b400">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f4b400">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <title>Google Keep Clone</title>
+</head>
+<body>
+
+    <header>
+        <h1>Google Keep Clone</h1>
+    </header>
+
+    <div class="logos">
+        <img src="icons/google-keep.svg" alt="firebase icon">
+        <span>+</span>
+        <img src="icons/vue-js.svg" alt="firebase icon">
+        <span>+</span>
+        <img src="icons/firebase.svg" alt="firebase icon">
+    </div>
+    
+    <div id="app" >
+        <div class="create-form">
+            <form action="" id="form" v-on:submit.stop="addNote">
+                <input type="text" placeholder="Title" name="title" >
+                <textarea type="text" placeholder="Note..." name="note" ></textarea>
+                <button type="submit">+</button>
+            </form>
+        </div>
+        <div class="notes" id="notes">
+            <div class="note" v-for="(note) in notes">
+                <h2>{{note.title}}</h2>
+                <p>{{note.note}}</p>
+                <button v-on:click="deleteNote(note.id)">x</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <pre>Made By Stanley Garbo</pre>
+    </footer>
+
+    <script src="config.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
