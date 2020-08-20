@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="theme-color" content="#f4b400">
     <meta name="msapplication-navbutton-color" content="#f4b400">
     <meta name="apple-mobile-web-app-status-bar-style" content="#f4b400">
@@ -28,9 +28,9 @@
     
     <div id="app" >
         <div class="create-form">
-            <form action="" id="form" v-on:submit.stop="addNote">
-                <input type="text" placeholder="Title" name="title" >
-                <textarea type="text" placeholder="Note..." name="note" ></textarea>
+            <form autocomplete="off" action="" id="form" v-on:submit.stop="addNote">
+                <input required no type="text" placeholder="Title" name="title" >
+                <textarea required type="text" placeholder="Note..." name="note" ></textarea>
                 <button type="submit">+</button>
             </form>
         </div>
@@ -43,11 +43,6 @@
         </div>
 
     </div>
-    
-    <footer>
-        <pre>Made By Stanley Garbo</pre>
-    </footer>
-
     <script src="config.js"></script>
 
     <script src="index.js"></script>

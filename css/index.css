@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+header {
+  padding: 0px 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #11cb5f; }
+  header h1 {
+    color: #fff; }
+
+.logos {
+  width: 200px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0px; }
+
+#app {
+  width: 340px;
+  margin: 0 auto; }
+  #app form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.8);
+    border-radius: 5px; }
+    #app form input, #app form button, #app form textarea {
+      border: none;
+      outline: none; }
+    #app form input {
+      height: 40px;
+      font-size: 20px; }
+    #app form textarea {
+      height: 60px;
+      resize: none;
+      font-size: 18px; }
+    #app form button {
+      position: absolute;
+      background-color: #11cb5f;
+      color: #FFF;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      font-size: 20px;
+      cursor: pointer;
+      right: 20px;
+      bottom: -20px;
+      box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.8); }
+  #app .notes {
+    margin-top: 40px; }
+    #app .notes .note {
+      color: #333;
+      position: relative;
+      box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.3);
+      padding: 10px; }
+      #app .notes .note button {
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: #ff3e3e;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer; }

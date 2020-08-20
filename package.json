@@ -1,0 +1,24 @@
+{
+  "name": "google-keep-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanleygarbo/google-keep-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanleygarbo/google-keep-clone/issues"
+  },
+  "homepage": "https://github.com/stanleygarbo/google-keep-clone#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
